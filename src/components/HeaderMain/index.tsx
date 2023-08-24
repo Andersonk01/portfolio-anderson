@@ -5,7 +5,7 @@ export const HeaderMain = (): JSX.Element => {
   return (
     <HeaderContainer>
       <Nav>
-        <Link href="#about">About Me</Link>
+        <Link href="/">Home</Link>
 
         <Link href="projects">Projects</Link>
 

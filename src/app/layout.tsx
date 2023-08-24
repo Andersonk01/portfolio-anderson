@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 
 import { HeaderMain } from "@/components/HeaderMain";
 import { FollowCursor } from "@/components/MouseMove";
+import { Footer } from "@/components/Footer";
+import StyledComponentsRegistry from "./registry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <HeaderMain />
-        <FollowCursor />
-
-        {children}
+        <StyledComponentsRegistry>
+          <HeaderMain />
+          <FollowCursor />
+          {children}
+          <Footer />
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

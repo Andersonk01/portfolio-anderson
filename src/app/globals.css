@@ -10,7 +10,8 @@
   color: #00000080;
   letter-spacing: 0.1em;
 
-  cursor: none;
+  scroll-behavior: smooth;
+  /* cursor: none; */
 }
 *::selection {
   background-color: #48ebcf;

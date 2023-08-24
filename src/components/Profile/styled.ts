@@ -1,6 +1,6 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.section`
   width: 80%;
@@ -107,5 +107,52 @@ export const Wrapper = styled.section`
   }
   section {
     grid-area: inferior;
+  }
+`;
+
+const scroll = keyframes`
+  0%, 100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+`;
+
+export const SectionTechs = styled.section`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  img {
+    animation: ${scroll} infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  img:nth-child(1) {
+    animation-duration: 4s;
+  }
+
+  img:nth-child(2) {
+    animation-duration: 5s;
+  }
+
+  img:nth-child(3) {
+    animation-duration: 3s;
+  }
+
+  img:nth-child(4) {
+    animation-duration: 6s;
+  }
+
+  img:nth-child(5) {
+    animation-duration: 4s;
+  }
+
+  img:nth-child(6) {
+    animation-duration: 5s;
+  }
+
+  img:nth-child(7) {
+    animation-duration: 3s;
   }
 `;
