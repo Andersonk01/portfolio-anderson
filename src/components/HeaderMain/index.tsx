@@ -9,9 +9,7 @@ export const HeaderMain = (): JSX.Element => {
 
         <Link href="projects">Projects</Link>
 
-        <Link href="#skills">Skills</Link>
-
-        <Link href="#contact">Contact</Link>
+        <Link href="/#skills">Skills</Link>
       </Nav>
     </HeaderContainer>
   );

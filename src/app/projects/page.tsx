@@ -30,19 +30,29 @@ export default function Projects() {
 
   return (
     <main className={styles.main}>
-      {repositories.length === 0 ? (
-        <p>Loading...</p>
-      ) : (
-        repositories.map((repo) => (
-          <CardList
-            key={repo.id}
-            name={repo.name}
-            description={repo.description}
-            // You can construct the URL to the GitHub repository page
-            url={`https://github.com/Andersonk01/${repo.name}`}
-          />
-        ))
-      )}
+      {
+        repositories.length === 0 ? (
+          <p>Loading...</p>
+        ) : (
+          <div>
+            <h1>Pagina em construção</h1>
+            <p>Em breve teremos novidades</p>
+            <a href="http://github.com/andersonk01" target="_blank">
+              Acesse meu perfil no GitHub. Click aqui.
+            </a>
+          </div>
+        )
+
+        // repositories.map((repo) => (
+        //   <CardList
+        //     key={repo.id}
+        //     name={repo.name}
+        //     description={repo.description}
+        //     // You can construct the URL to the GitHub repository page
+        //     url={`https://github.com/Andersonk01/${repo.name}`}
+        //   />
+        // ))
+      }
     </main>
   );
 }
