@@ -34,7 +34,7 @@ export default function Home() {
                 <h4>Endereço:</h4>
                 <p>Maranhão, Brasil</p>
                 <h4>E-mail:</h4>
-                <p>contato@example.com</p>
+                <p>kauercode@gmail.com</p>
               </div>
 
               {/* caracteristicas pessoais */}
