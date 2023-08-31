@@ -4,6 +4,8 @@ import { SideContainer } from "./styled";
 import Image from "next/image";
 import Link from "next/link";
 
+import blueflame from "../../../public/assets/blueflame.gif";
+
 export const Sidebar = (): JSX.Element => {
   const [showDiv, setShowDiv] = useState<boolean>(false);
 
@@ -28,11 +30,19 @@ export const Sidebar = (): JSX.Element => {
   return (
     <SideContainer $isVisible={showDiv}>
       <div>
-        <Image src="/back-profile.svg" alt="logo" width={200} height={200} />
+        <Image
+          src="/perfil.png"
+          alt="logo"
+          width={200}
+          height={200}
+          style={{ borderRadius: "20%" }}
+          priority={true}
+        />
+
         <h1>Anderson Kauer</h1>
         <h2>Desenvolvedor | UX Design</h2>
         <p>Redes Sociais</p>
-        <span>
+        <section>
           {/* github */}
           <Link href="https://github.com/andersonk01" target="_blank">
             <Image src="/assets/github.svg" alt="logo" width={20} height={20} />
@@ -58,7 +68,19 @@ export const Sidebar = (): JSX.Element => {
               height={20}
             />
           </Link>
-        </span>
+        </section>
+        <Image
+          src={blueflame}
+          alt="logo"
+          width={80}
+          height={80}
+          style={{
+            zIndex: "1",
+            position: "absolute",
+            bottom: "-5px",
+            right: "-20px",
+          }}
+        />
       </div>
     </SideContainer>
   );

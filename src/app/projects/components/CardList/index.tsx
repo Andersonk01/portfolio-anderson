@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { CardListWrapper } from "./styled";
-import Image from "next/image";
 
 type CardListProps = {
   name?: string;
@@ -12,7 +11,7 @@ type CardListProps = {
 export const CardList = ({
   name = "name",
   description = "",
-  url = "/logo.png",
+  url = "",
 }: CardListProps) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
@@ -23,10 +22,11 @@ export const CardList = ({
       $showTooltip={showTooltip}
     >
       <button>
-        <a href="#">Link</a>
+        <a href={url} target="_blank">
+          Link
+        </a>
       </button>
 
-      <Image src={url} width={280} height={280} alt="image-list" />
       <div>
         <h1>{name}</h1>
         <p>{description}</p>

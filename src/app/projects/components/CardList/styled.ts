@@ -22,7 +22,7 @@ export const CardListWrapper = styled.div<CardListWrapperProps>`
   overflow: hidden;
 
   max-width: 290px;
-  height: 400px;
+  height: 150px;
 
   display: flex;
   flex-direction: column;

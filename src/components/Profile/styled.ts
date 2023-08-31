@@ -123,6 +123,7 @@ export const SectionTechs = styled.section`
   display: flex;
   justify-content: center;
   gap: 20px;
+  z-index: 2;
 
   img {
     animation: ${scroll} infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);

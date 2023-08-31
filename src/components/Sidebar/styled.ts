@@ -37,12 +37,18 @@ export const SideContainer = styled.aside<ContainerAboutProps>`
     p {
       font-size: 0.9rem;
     }
-    span {
+    section {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
+
+      a {
+        &:hover {
+          scale: 1.5;
+        }
+      }
     }
   }
 

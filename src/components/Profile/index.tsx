@@ -12,11 +12,13 @@ export const Profile = () => {
         <Link href="projects">✨Projetos✨</Link>
       </div>
       <span>
+        {/* <Image src="/back-profile.svg" alt="logo" width={400} height={400} /> */}
         <Image
-          src="/back-profile.svg"
+          src="/perfil.png"
           alt="logo"
           width={400}
           height={400}
+          style={{ borderRadius: "20%" }}
           priority={true}
         />
       </span>
